@@ -1,0 +1,200 @@
+		/*@font-face {
+		    font-family: 'Open Sans';
+		    src: url('http://fonts.googleapis.com/css?family=Open+Sans');
+		    src: local('icomoonregular'),
+		         url('open-sans.eot?#iefix') format('embedded-opentype'),
+		         url('open-sans.woff') format('woff'),
+		         url('open-sans.ttf') format('truetype'),
+		         url('open-sans.svg#open-sans') format('svg');
+		}*/
+		@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+		body {
+			font-family: 'Open Sans';
+			font-size: 12px;
+		}
+		#contenedor {
+		  width: 80%;
+		  margin: 0 auto;
+		}
+		form {
+			width: 50%;
+		}
+		form div {
+		  margin: .4em 0;
+		}
+		form div label {
+		  width: 25%;
+		  float: left;
+		  font-weight: bold;
+		  color: white;
+		}
+
+
+		form legend {
+		  color: white;		
+		  padding: 0.2em 0.5em;
+		  font-weight: bold;
+		  font-size: 20px;		  
+		}
+
+		.button { 
+		  border: 1px solid #dedede;		  
+		  color: #fff;
+		  display: inline-block;
+		  /*font: bold 12px/12px HelveticaNeue, Arial;*/
+		  padding: 8px 11px;
+		  background: #173587;
+		  text-decoration: none;
+		  margin: 4px;
+		  		  
+		}
+		form input[type=submit]{
+			margin: 1em 0;
+		}
+
+		.lista {
+			margin: 1em 0;
+		}
+		/*Borrando rastro de estilos predefinidos*/
+		table, table td, table tr {
+			padding:0px;
+			margin:0px;
+			border-spacing: 0px;
+		}
+		table {     
+			/*table-layout: fixed;*/
+			color:white;
+    		font-size: 15px;    
+    		width: 60%; 
+    		text-align: left;    
+    		border-collapse: collapse; 
+    	}
+
+    	table caption {
+    		text-align:left;
+    		font-size: 14px;
+    		font-weight: bold; 
+    		
+    	}
+
+		table th {     
+			font-size: 13px;     
+			font-weight: normal;     
+			padding: 2px;     
+			border: 1px solid #fff;
+    		
+    		text-align: center; 
+    	}
+    	table td {    
+			padding: 2px;     
+			border-bottom: 1px solid #fff;
+    		  
+    		border-top: 1px solid transparent; 
+    	}
+    	table tr:nth-child(2n) {
+    		
+		}
+
+		table tr:nth-child(2n+1){			
+			
+		}
+
+		table.header tr:not(:first-child):hover, table:not(.header) tr:hover {
+			
+		}
+
+		table td:last-child {
+			width: 160px;
+		}
+
+.contenido{
+	margin:10%;
+	background: rgba(0,0,0,.5);
+	padding:15px;
+	border-radius: 10px 10px 10px 10px;
+-moz-border-radius: 10px 10px 10px 10px;
+-webkit-border-radius: 10px 10px 10px 10px;
+border: 0px solid #000000;
+}
+
+.contenido h1{
+	color:white;
+		font-style:italic;
+	font-weight:bold;
+	font-size:60px;
+	
+	font-family: times new roman;
+}
+
+.inputs{
+	color:white;
+	margin-bottom:5%;
+	
+}
+
+.inputs a{
+	font-style:italic;
+	font-weight:bold;
+	font-size:30px;
+	
+	font-family: times new roman;
+}
+
+.inputs input {
+	margin-left:10px;
+	margin-bottom:10px;
+}
+
+.inputs button {
+	margin-left:10px;
+	font-style:italic;
+	font-weight:bold;
+}
+
+.botones button {
+	margin-left:10px;
+	margin-bottom:10px;
+	font-style:italic;
+	font-weight:bold;
+}
+
+.table {
+	margin-top:10px;
+}
+
+#op
+{
+    width:20%;
+}
+
+#u-tabla td button {
+	margin-left:10px;
+}
+
+.tabla > h3{
+	color:white;
+	font-style:italic;
+	font-weight:bold;
+	font-size:30px;
+	font-family: times new roman;
+}
+
+.tabla > table{
+	border-radius: 10px 10px 10px 10px;
+-moz-border-radius: 10px 10px 10px 10px;
+-webkit-border-radius: 10px 10px 10px 10px;
+border: 0px solid #000000;
+	font-style:italic;
+	font-size:25px;
+	font-family: times new roman;
+}
+
+#buscar a{
+	color:white;
+	font-size:25px;
+	font-family: times new roman;
+}
+#buscar input{
+	margin:10px;
+}
+
