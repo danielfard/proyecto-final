@@ -27,11 +27,11 @@ public class Usuario implements Serializable {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
 	
-	@Column(name = "usuario", nullable = false, unique = true)
-	private String usuario;
+	@Column(name = "username", nullable = false, unique = true)
+	private String username;
 	
-	@Column(name="clave")
-	private String clave;
+	@Column(name="password")
+	private String password;
 	
 	@Column(name="habilitado")
 	private Boolean habilitado;
@@ -55,20 +55,20 @@ public class Usuario implements Serializable {
 		this.id = id;
 	}
 
-	public String getUsuario() {
-		return usuario;
+	public String getUsername() {
+		return username;
 	}
 
-	public void setUsuario(String usuario) {
-		this.usuario = usuario;
+	public void setUsername(String username) {
+		this.username = username;
 	}
 
-	public String getClave() {
-		return clave;
+	public String getPassword() {
+		return password;
 	}
 
-	public void setClave(String clave) {
-		this.clave = clave;
+	public void setPassword(String password) {
+		this.password = password;
 	}
 
 	public Boolean getHabilitado() {

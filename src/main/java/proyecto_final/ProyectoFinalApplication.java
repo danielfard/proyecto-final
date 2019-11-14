@@ -5,6 +5,7 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.event.ContextRefreshedEvent;
 import org.springframework.context.event.EventListener;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 
 import proyecto_final.entities.Acudiente;
 import proyecto_final.entities.Alumno;
@@ -12,12 +13,14 @@ import proyecto_final.entities.Asignatura;
 import proyecto_final.entities.Clase;
 import proyecto_final.entities.Curso;
 import proyecto_final.entities.Profesor;
+import proyecto_final.entities.Usuario;
 import proyecto_final.repositories.AcudienteRepository;
 import proyecto_final.repositories.AlumnoRepository;
 import proyecto_final.repositories.AsignaturaRepository;
 import proyecto_final.repositories.ClaseRepository;
 import proyecto_final.repositories.CursoRepository;
 import proyecto_final.repositories.ProfesorRepository;
+import proyecto_final.repositories.UsuarioRepository;
 
 @SpringBootApplication
 public class ProyectoFinalApplication {
@@ -34,7 +37,11 @@ public class ProyectoFinalApplication {
 	private ProfesorRepository profeRepo;
 	@Autowired
 	private CursoRepository cursoRepo;
-
+	@Autowired
+	private UsuarioRepository userRepo;
+	@Autowired
+    private BCryptPasswordEncoder bCryptPasswordEncoder;
+	
 	public static void main(String[] args) {
 		SpringApplication.run(ProyectoFinalApplication.class, args);
 	}
@@ -97,8 +104,12 @@ public class ProyectoFinalApplication {
 	    a.setObservaciones("Se la come entera el prro");
 	    a.setRepetidor(true);
 	    a.setTelefono(3212321);
-	    
 	    alumRepo.save(a);
 	    
+	    
+	    Usuario user = new Usuario();
+	    user.setUsername("admin");
+	    user.setPassword(bCryptPasswordEncoder.encode("secret"));
+	    userRepo.save(user);
 	}
 }

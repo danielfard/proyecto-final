@@ -7,5 +7,6 @@ import proyecto_final.entities.Usuario;
 
 @Repository
 public interface UsuarioRepository extends JpaRepository<Usuario, Long> {
-	Usuario findByUsuario(String usuario);
+	//Usuario findByUsuario(String usuario);
+	Usuario findByUsername(String username);
 }

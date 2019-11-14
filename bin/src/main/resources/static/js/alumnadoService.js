@@ -69,6 +69,27 @@ function setAlumnado(alumando, callback) {
 
 }
 
+function editAlumnado(alumando, callback) {
+	
+	$.ajax('api/v1/alumnado/'+alumando.id, {
+		type: "PUT",
+		contentType: "application/json",
+		//headers: {"Authorization": sessionStorage.getItem('token')},
+		data: JSON.stringify(alumando),
+		success: function(data) {
+			var o = JSON.parse(JSON.stringify(data));
+			//callback(o);
+			callback(o);
+		},
+		error: function(request,error) {
+            alert('An error occurred attempting to set a alumno');
+            // console.log(request, error);
+        }	
+	})
+
+}
+
+
 function deleteAlumnado(id, callback) {
 	
 	$.ajax("api/v1/alumnado/"+id, {

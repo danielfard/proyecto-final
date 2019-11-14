@@ -9,9 +9,9 @@
 <h1>Busqueda de alumnos</h1>
 
 <div id="buscar">
-<a>Nombre</a><input><br>
-<a>Curso</a><input><br>
- <input type="checkbox" name="soloactuales" value="actuales"> <a>Mostrar solo Actuales<a/>
+Nombre <input type="text" id="searchName"><br>
+Curso <input type="text" id="searchCurso"><br>
+<button type="button"  onclick="FiltrarAlumnos();" class="btn btn-light">Buscar</button>
 </div>
 
 <div class="botones">
@@ -75,8 +75,9 @@
 					  <div>
 					  <a>observaciones</a><input type="text" id="observaciones" name="trip-start">
 					  </div>
-					  <div>
+					  <div id="buttons">
 					  	<button type="button" class="btn btn-success" id="agregar" onclick="agregarAlumnado()">Agregar</button>
+					  	
 					  </div>
 		  			</div>
 					  
