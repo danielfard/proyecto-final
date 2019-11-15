@@ -9,6 +9,7 @@ function listar() {
     		contentType: "application/json",
     		dataType:'json',
     		type: "GET",
+    		headers: {"Authorization": sessionStorage.getItem('token')},
     		success:function(datos){
     			console.log(datos);
     			 $.each(datos, function(i, e) {

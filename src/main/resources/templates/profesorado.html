@@ -9,9 +9,8 @@
 <h1>Busqueda de profesores</h1>
 
 <div id="buscar">
-<a>Nombre</a><input><br>
-<a>Cedula</a><input>
-
+	Nombre <input type="text" id="searchName"><br>
+	<button type="button"  onclick="Filtrarprofesor();" class="btn btn-light">Buscar</button>
 </div>
 
 <div class="botones">
@@ -56,8 +55,8 @@
 			    <label for="titulacion">Titulacion</label>
 			    <input type="text" id="titulacion" name="titulacion" size="35"/>
 			  </div>
-			  <div>
-			  	<button type="button" class="btn btn-success" id="agregar">Agregar</button>
+			  <div id="buttons">
+			  	<button type="button" class="btn btn-success" id="agregar" onclick="agregarprofesor()">Agregar</button>
 			  </div>
   			</div>
 			  
@@ -121,6 +120,7 @@
 </div>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script type="text/javascript" src="js/profesoradoService.js"></script>
 <script type="text/javascript" src="js/profesoradologica.js"></script>
   </body>
 </html>

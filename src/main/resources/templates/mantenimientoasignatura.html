@@ -49,13 +49,16 @@ function ActivarCampoOtroTema(){
   			<div id="OtroTema" style="display: none;">
   				<div>
 			    <label for="nivel">Nombre</label>
-			    <input type="text" id="nivel" name="nivel" size="35" />
+			    <input type="text" id="nombre" name="nivel" size="35" />
 			  </div>
  			  <div>
 			    <label for="etapa">Curso</label>
-			    <input type="text" id="etapa" name="etapa" size="35" />
+			    <input type="text" id="curso" name="etapa" size="35" />
+			    
 			  </div>
-			  
+			  <div id="buttons">
+			  	<button type="button" class="btn btn-success" id="agregar" onclick="agregarasignatura()">Agregar</button>
+			  </div>
   			</div>
 			  
 		</fieldset>		
@@ -84,6 +87,8 @@ function ActivarCampoOtroTema(){
 </div>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-<!-- <script type="text/javascript" src="js/logica2.js"></script> -->
+<script type="text/javascript" src="js/cursoService.js"></script>
+<script type="text/javascript" src="js/asignaturaService.js"></script>
+<script type="text/javascript" src="js/asignaturalogica.js"></script>
   </body>
 </html>

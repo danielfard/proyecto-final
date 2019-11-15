@@ -11,6 +11,8 @@ import javax.persistence.Id;
 import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 
 @Entity
 @Table(name = "Profesores")
@@ -50,6 +52,7 @@ public class Profesor implements Serializable {
 	private String titulacion;
 	
 	@OneToMany(mappedBy = "profesor")
+	@JsonIgnore
 	private Set<Clase> clases;
 
 	public Profesor(Long id, String nombre, String apellido_1,String apellido_2, Long cedula,Long telefono,String email, String titulacion) {

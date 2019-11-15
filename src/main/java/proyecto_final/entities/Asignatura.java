@@ -39,6 +39,14 @@ public class Asignatura implements Serializable {
 		return nombre_asignatura;
 	}
 
+	public Long getId_asignatura() {
+		return id_asignatura;
+	}
+
+	public void setId_asignatura(Long id_asignatura) {
+		this.id_asignatura = id_asignatura;
+	}
+
 	public void setNombre_asignatura(String nombre_asignatura) {
 		this.nombre_asignatura = nombre_asignatura;
 	}
